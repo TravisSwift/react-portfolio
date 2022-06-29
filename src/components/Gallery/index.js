@@ -4,7 +4,7 @@ import photo from "../../assets/small/0.jpg";
 
 function Gallery(props) {
   const currentCategory = {
-    name: "Gallery",
+    name: "",
     description:
       "Photos of projects in my portfolio",
   };
