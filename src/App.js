@@ -27,7 +27,7 @@ function App() {
       ></Nav>
       <main>
         <div>
-          <Gallery></Gallery>
+          <Gallery currentCategory={{name: 'portfolio', description: 'examples of past projects'}}></Gallery>
           <About></About>
         </div>
       </main>
