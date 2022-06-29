@@ -30,12 +30,13 @@ function Nav() {
 
   return (
 <header className="flex-row px-1"> 
-  <h2>
+  <h1>
     <a href="/">
       “Any sufficiently advanced technology is indistinguishable from magic.”
       {/* <h1>“Any sufficiently advanced technology is indistinguishable from magic.”</h1>  */}
     </a>
-  </h2>
+  </h1>
+  <h2>
   <nav >
   <ul className="flex-row">
           <li className="mx-2">
@@ -56,6 +57,7 @@ function Nav() {
       ))}
     </ul>
   </nav>
+  </h2>
 </header>
   );
 }
