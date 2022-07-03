@@ -3,18 +3,18 @@ import { render, cleanup } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 import Gallery from '..'
 
-const portfiolio = { name: "portfolio", description: "images of apps" };
+const portfolio = { name: "portfolio", description: "images of apps" };
 
 afterEach(cleanup)
 
 describe('Gallery is rendering', () => {
 
   it('renders', () => {
-    render(<Gallery currentCategory={portrait} />);
+    render(<Gallery currentCategory={portfolio} />);
   });
 })
 
 it('matches snapshot', () => {
-    const { asFragment } = render(<Gallery currentCategory={portrait} />)
+    const { asFragment } = render(<Gallery currentCategory={portfolio} />)
     expect(asFragment()).toMatchSnapshot()
   })
