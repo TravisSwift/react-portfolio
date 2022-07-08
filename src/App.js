@@ -12,14 +12,29 @@ function App() {
       name: 'Portfolio',
       description: 'Apps',
     },
-    // { name: 'contact', description: 'Contact'},
-    // { name: 'resume', description: 'View and download resume'}
  
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   const [contactSelected, setContactSelected] = useState(false);
+  const [currentPage, setCurrentPage] = useState("About");
+  const renderCurrentPage =() => {
+        if (currentPage === "About") {
+          return <About/>
+        }
+
+        if (currentPage === "Gallery") {
+          return <Gallery/>
+        }
+
+        if (currentPage === "Contact") {
+          return <ContactForm/>
+        }
+
+        
+  }
+
 
   return (
     <div>
@@ -29,21 +44,11 @@ function App() {
         currentCategory={currentCategory}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
+        setCurrentPage={setCurrentPage}
       ></Nav>
       <main>
-        {!contactSelected ? (
-          <>
-            <Gallery currentCategory={currentCategory}></Gallery>
-            <About></About>
-            {/* <ContactForm></ContactForm> */}
-          </>
-        )
-         : (
-          <ContactForm></ContactForm>
-          )
-          
-          
-          }
+ 
+         { renderCurrentPage()}
           
             <footer currentCategory={currentCategory}></footer>
          
