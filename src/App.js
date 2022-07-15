@@ -3,6 +3,7 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
+import Footer from './components/Footer';
 
 
 
@@ -50,7 +51,7 @@ function App() {
  
          { renderCurrentPage()}
           
-            <footer currentCategory={currentCategory}></footer>
+            <Footer></Footer>
          
       </main>
     </div>

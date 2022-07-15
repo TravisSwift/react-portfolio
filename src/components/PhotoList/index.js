@@ -1,7 +1,7 @@
  
 
 import React, { useState } from 'react';
-import Modal from '../Modal';
+// import Modal from '../Modal';
 
  
 
@@ -43,6 +43,7 @@ const PhotoList = ({ category }) => {
             src={require(`../../assets/small/${i}.jpg`)}
             alt={image.name}
             className="img-thumbnail mx-1"
+            
             key={image.name}
           />
         ))}

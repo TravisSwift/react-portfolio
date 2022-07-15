@@ -5,7 +5,7 @@ main {
 }
 :root {
   --primary: #8c54ff;
-  --secondary: #f3a847;
+  --secondary: #8c54ff;
   --tertiary: #b12704;
   --light: #fafafa;
   --dark: #000000;
@@ -41,7 +41,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
+h5, 
 h6 {
   font-family: 'system-ui', sans-serif;
   font-weight: 500;
